@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../css/style.css"
+            fx:controller="com.bkaj.businessManager.controllers.MainViewController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <HBox spacing="100" alignment="CENTER" styleClass="debugBorder">
+            <Label text="TODO"/>
+            <Label text="Analiza"/>
+        </HBox>
+    </top>
+
+    <center>
+        <GridPane hgap="10" vgap="10" styleClass="debugBorder">
+            <VBox styleClass="debugBorder" GridPane.columnIndex="0" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS">
+                <Label text="task1"/>
+                <Label text="task2"/>
+                <Label text="task3"/>
+                <Label text="task4"/>
+            </VBox>
+            <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="debugBorder" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS">
+            </VBox>
+            <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="debugBorder" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS">
+            </VBox>
+        </GridPane>
+    </center>
+
+</BorderPane>
