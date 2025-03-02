@@ -18,5 +18,5 @@ dependencies {
 }
 
 application {
-    mainClass = 'com.bkaj.businessManager.MainApp'
+    mainClass = 'com.bkaj.businessManager.App'
 }

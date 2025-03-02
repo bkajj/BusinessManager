@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../css/style.css"
+            fx:controller="com.bkaj.businessManager.controllers.AddTaskViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <HBox spacing="100" alignment="CENTER" styleClass="debugBorder">
+            <Label text="TODO"/>
+            <Label text="Analiza"/>
+        </HBox>
+    </top>
+
+    <center>
+        <HBox>
+            <Region HBox.hgrow="ALWAYS" prefWidth="0.2"/>
+
+            <VBox spacing="20" styleClass="debugBorder" style="-fx-padding: 10 50 10 50;">
+                <TextField promptText="Enter task name"/>
+                <HBox spacing="10">
+                    <DatePicker promptText="Enter due date"/>
+                    <TextField promptText="Enter due time"/>
+                </HBox>
+                <TextField promptText="Enter expected income"/>
+                <HBox alignment="CENTER">
+                    <Button text="Add Task"/>
+                </HBox>
+            </VBox>
+
+            <Region HBox.hgrow="ALWAYS" prefWidth="0.2"/>
+        </HBox>
+    </center>
+</BorderPane>

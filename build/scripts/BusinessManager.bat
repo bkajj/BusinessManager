@@ -74,7 +74,7 @@ set CLASSPATH=%APP_HOME%\lib\BusinessManager.jar;%APP_HOME%\lib\javafx-fxml-23-w
 
 
 @rem Execute BusinessManager
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %BUSINESS_MANAGER_OPTS%  -classpath "%CLASSPATH%" com.bkaj.businessManager.MainApp %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %BUSINESS_MANAGER_OPTS%  -classpath "%CLASSPATH%" com.bkaj.businessManager.App %*
 
 :end
 @rem End local scope for the variables with windows NT shell

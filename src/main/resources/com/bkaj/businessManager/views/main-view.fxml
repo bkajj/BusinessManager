@@ -22,10 +22,19 @@
     <center>
         <GridPane hgap="10" vgap="10" styleClass="debugBorder">
             <VBox styleClass="debugBorder" GridPane.columnIndex="0" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS">
-                <Label text="task1"/>
-                <Label text="task2"/>
-                <Label text="task3"/>
-                <Label text="task4"/>
+                <VBox styleClass="debugBorder" VBox.vgrow="ALWAYS" spacing="10">
+                    <Label text="task1"/>
+                    <Label text="task2"/>
+                    <Label text="task3"/>
+                    <Label text="task4"/>
+                </VBox>
+
+                <VBox styleClass="debugBorder" alignment="CENTER">
+                    <Button text="Add Task" alignment="CENTER" onAction="#handleAddTaskButton">
+
+                    </Button>
+                </VBox>
+
             </VBox>
             <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="debugBorder" GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS">
             </VBox>
