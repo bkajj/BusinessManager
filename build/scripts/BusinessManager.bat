@@ -70,7 +70,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\BusinessManager.jar;%APP_HOME%\lib\javafx-fxml-23-win.jar;%APP_HOME%\lib\javafx-controls-23-win.jar;%APP_HOME%\lib\javafx-graphics-23-win.jar;%APP_HOME%\lib\javafx-base-23-win.jar
+set CLASSPATH=%APP_HOME%\lib\BusinessManager.jar;%APP_HOME%\lib\javafx-fxml-23-win.jar;%APP_HOME%\lib\javafx-controls-23-win.jar;%APP_HOME%\lib\mysql-connector-java-8.0.28.jar;%APP_HOME%\lib\javafx-graphics-23-win.jar;%APP_HOME%\lib\protobuf-java-3.11.4.jar;%APP_HOME%\lib\javafx-base-23-win.jar
 
 
 @rem Execute BusinessManager

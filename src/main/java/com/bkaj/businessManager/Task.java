@@ -1,5 +1,7 @@
 package com.bkaj.businessManager;
 
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
@@ -61,5 +63,21 @@ public class Task {
 
     public Duration timeToDeadline() {
         return Duration.between(deadline, LocalDateTime.now());
+    }
+
+    public void addTaskToDatabase() throws SQLException {
+        String query = "INSERT INTO tasks (TaskName, Deadline, Completed, Income, Priority) VALUES (?, ?, ?, ?, ?)";
+        try (PreparedStatement preparedStatement = App.getDbConnection().prepareStatement(query)) {
+
+            preparedStatement.setString(1, name);
+            preparedStatement.setObject(2, deadline);
+            preparedStatement.setBoolean(3, completed);
+            preparedStatement.setInt(4, income);
+            preparedStatement.setInt(5, priority);
+
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

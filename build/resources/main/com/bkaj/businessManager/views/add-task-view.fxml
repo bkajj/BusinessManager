@@ -23,17 +23,15 @@
             <Region HBox.hgrow="ALWAYS" prefWidth="0.2"/>
 
             <VBox spacing="20" styleClass="debugBorder" style="-fx-padding: 10 50 10 50;">
-                <TextField promptText="Enter task name"/>
+                <TextField fx:id="taskNameTextField" promptText="Enter task name"/>
                 <HBox spacing="10">
-                    <DatePicker promptText="Enter due date"/>
-                    <TextField promptText="Enter due time"/>
+                    <DatePicker fx:id="deadlineDatePicker" promptText="Enter due date"/>
+                    <TextField fx:id="deadlineTimeTextField" promptText="Enter due time"/>
                 </HBox>
-
-                <TextField promptText="Enter expected income"/>
+                <TextField fx:id="incomeTextField" promptText="Enter expected income"/>
                 <HBox alignment="CENTER">
-                    <Button text="Add Task"/>
+                    <Button fx:id="addTaskButton" text="Add Task" onAction="#handleAddTaskButton"/>
                 </HBox>
-
             </VBox>
 
             <Region HBox.hgrow="ALWAYS" prefWidth="0.2"/>
